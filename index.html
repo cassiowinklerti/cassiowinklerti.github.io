@@ -1,252 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- SEO básico -->
-<meta name="description" content="Cássio Winkler - Profissional de Tecnologia da Informação com mais de 17 anos de experiência em projetos, ERP e bancos de dados.">
-<meta name="keywords" content="Cássio Winkler, TI, Engenharia de Software, ERP, Banco de Dados, Gestão de Projetos, Automação">
-<meta name="author" content="Cássio Winkler">
-<meta name="robots" content="index, follow">
-
-<!-- Responsividade (já tem, mas mantendo padrão) -->
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Open Graph (Facebook, LinkedIn, etc.) -->
+<!-- SEO -->
+<title>Cássio Winkler | Tecnologia da Informação</title>
+<meta name="description" content="Cássio Winkler - Profissional de TI com +17 anos em projetos, ERP e dados.">
+<link rel="canonical" href="https://cassiowinklerti.github.io/">
+
+<!-- Open Graph -->
 <meta property="og:title" content="Cássio Winkler | Tecnologia da Informação">
-<meta property="og:description" content="Mais de 17 anos de experiência em projetos, ERP e soluções corporativas.">
+<meta property="og:description" content="Especialista em projetos, ERP e dados com foco em resultados.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cassiowinklerti.github.io/">
-<meta property="og:image" content="https://github.com/cassiowinklerti/cassiowinklerti.github.io/blob/main/img.png?raw=true/">
+<meta property="og:image" content="https://cassiowinklerti.github.io/img.png">
 
-<!-- Twitter Card -->
+<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cássio Winkler | Tecnologia da Informação">
-<meta name="twitter:description" content="Especialista em projetos, ERP e dados com foco em resultados.">
-<meta name="twitter:image" content="https://github.com/cassiowinklerti/cassiowinklerti.github.io/blob/main/img.png?raw=true">
+<meta name="twitter:title" content="Cássio Winkler">
+<meta name="twitter:description" content="Especialista em projetos, ERP e dados.">
+<meta name="twitter:image" content="https://cassiowinklerti.github.io/img.png">
 
-<!-- Canonical -->
-<link rel="canonical" href="https://cassiowinklerti.github.io/">
-  <title>Cássio Winkler</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+<!-- Fonte otimizada -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: radial-gradient(circle at top, #0f172a, #020617);
-      color: #e2e8f0;
-      line-height: 1.6;
-    }
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
 
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 40px 20px;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 30px;
-    }
+body{
+font-family:'Inter',sans-serif;
+background:radial-gradient(circle at top,#0f172a,#020617);
+color:#e2e8f0;
+line-height:1.6;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+-webkit-font-smoothing:antialiased;
+}
 
-    @media (min-width: 900px) {
-      .container {
-        grid-template-columns: 1.2fr 0.8fr;
-      }
+.container{
+flex:1;
+max-width:1200px;
+margin:auto;
+padding:40px 20px;
+display:grid;
+gap:30px;
+}
 
-      header, footer {
-        grid-column: 1 / -1;
-      }
-    }
+@media(min-width:900px){
+.container{grid-template-columns:1.2fr 0.8fr}
+header{grid-column:1/-1}
+}
 
-    header {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+header{text-align:center}
+header h1{font-size:2.4rem}
+header p{opacity:.7;margin-top:6px}
 
-    header h1 {
-      font-size: 2.6rem;
-      font-weight: 700;
-    }
+.card{
+background:rgba(255,255,255,.04);
+border:1px solid rgba(255,255,255,.08);
+backdrop-filter:blur(10px);
+padding:28px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
 
-    header p {
-      opacity: 0.7;
-      margin-top: 8px;
-    }
+.card h2{margin-bottom:12px}
 
-    .card {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
-      backdrop-filter: blur(12px);
-      padding: 32px;
-      border-radius: 20px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-      transition: 0.3s;
-    }
+.btn{
+display:inline-block;
+padding:12px;
+border-radius:10px;
+background:linear-gradient(135deg,#38bdf8,#0ea5e9);
+color:#020617;
+font-weight:600;
+border:none;
+cursor:pointer;
+transition:.2s;
+}
 
-    .card:hover {
-      transform: translateY(-4px);
-    }
+.btn:hover{transform:translateY(-2px)}
 
-    .card h2 {
-      margin-bottom: 16px;
-      font-weight: 600;
-    }
+form{display:grid;gap:12px}
 
-    .highlight {
-      color: #38bdf8;
-      font-weight: 600;
-    }
+input,textarea{
+padding:12px;
+border-radius:10px;
+border:1px solid rgba(255,255,255,.08);
+background:rgba(255,255,255,.05);
+color:#fff;
+font-size:.9rem;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-      color: #020617;
-      font-weight: 600;
-      text-decoration: none;
-      transition: 0.3s;
-    }
+input:focus,textarea:focus{border-color:#38bdf8;outline:none}
 
-    .btn:hover {
-      transform: translateY(-2px) scale(1.02);
-      box-shadow: 0 10px 25px rgba(56,189,248,0.3);
-    }
+textarea{height:120px;resize:none}
 
-    form {
-      display: grid;
-      gap: 15px;
-    }
+footer{
+text-align:center;
+padding:20px;
+opacity:.5;
+font-size:.8rem;
+}
 
-    input, textarea {
-      padding: 14px;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.08);
-      background: rgba(255,255,255,0.05);
-      color: white;
-      font-size: 0.95rem;
-    }
+/* Modal */
+.modal{
+position:fixed;
+inset:0;
+display:none;
+align-items:center;
+justify-content:center;
+background:rgba(0,0,0,.6);
+}
 
-    input:focus, textarea:focus {
-      border-color: #38bdf8;
-      outline: none;
-    }
+.modal-content{
+background:#020617;
+padding:24px;
+border-radius:12px;
+text-align:center;
+max-width:320px;
+border:1px solid rgba(255,255,255,.1);
+animation:fade .2s ease;
+}
 
-    textarea {
-      resize: none;
-      height: 130px;
-    }
-
-    input::placeholder, textarea::placeholder {
-      color: #94a3b8;
-    }
-
-    button {
-      border: none;
-      cursor: pointer;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 20px;
-      opacity: 0.5;
-      font-size: 0.85rem;
-    }
-  </style>
+@keyframes fade{from{opacity:0;transform:scale(.95)}to{opacity:1}}
+</style>
 </head>
+
 <body>
-  <div class="container">
 
-    <header>
-      <h1>Cássio Winkler</h1>
-      <p>Tecnologia da Informação</p>
-    </header>
+<div class="container">
 
-    <section class="card">
-      <h2>Resumo Profissional</h2>
-      <p>
-        Profissional de Tecnologia da Informação com +17 anos de experiência em gestão de projetos, sistemas ERP e bancos de dados. Atua na
-        construção de soluções orientadas a resultados, com foco em eficiência operacional e experiência do usuário.
-      </p>
-      <br>
-      <p>
-        Forte atuação na tradução de demandas de negócio em soluções tecnológicas estratégicas, escaláveis e sustentáveis, com experiência em
-        implantação de sistemas, automação de processos e desenvolvimento de soluções corporativas.
-      </p>
-      <br>
-      <p>
-        Competências: gestão de projetos, modelagem de processos, integração de sistemas, ERP, bancos de dados e automação. Perfil analítico,
-        visão estratégica e atuação colaborativa em ambientes complexos.
-      </p>
-      <br>
-      <!--<a href="cv.pdf" class="btn" download>⬇ Download CV</a>-->
-    </section>
+<header>
+<h1>Cássio Winkler</h1>
+<p>Tecnologia da Informação</p>
+</header>
 
-    <section class="card">
-      <h2>Contato</h2>
-      <form action="https://formspree.io/f/mjgjpkle" method="POST">
-        <input type="text" name="name" placeholder="Seu nome" required>
-        <input type="email" name="email" placeholder="Seu email" required>
-        <textarea name="message" placeholder="Sua mensagem" required></textarea>
-        <button class="btn" type="submit">Enviar mensagem</button>
-      </form>
-    </section>
+<section class="card">
+<h2>Resumo Profissional</h2>
+<p>Profissional de TI com +17 anos em projetos, ERP e bancos de dados, focado em eficiência operacional e experiência do usuário.</p>
+<br>
+<p>Especialista na tradução de necessidades de negócio em soluções escaláveis, com forte atuação em automação, integração e sistemas corporativos.</p>
+<br>
+<p>Competências: projetos, processos, ERP, dados e automação. Perfil analítico e estratégico.</p>
+</section>
 
-    <footer>
-      © 2026 - Cássio Winkler
-    </footer>
+<section class="card">
+<h2>Contato</h2>
+<form action="https://formspree.io/f/mjgjpkle" method="POST">
+<input type="text" name="name" placeholder="Seu nome" required>
+<input type="email" name="email" placeholder="Seu email" required>
+<textarea name="message" placeholder="Sua mensagem" required></textarea>
+<button class="btn" type="submit">Enviar mensagem</button>
+</form>
+</section>
 
-  </div>
+</div>
 
-  <!-- Modal -->
-  <div id="modal" style="position:fixed;top:0;left:0;width:100%;height:100%;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);">
-    <div style="background:#020617;padding:30px;border-radius:16px;text-align:center;max-width:400px;border:1px solid rgba(255,255,255,0.1)">
-      <h3 style="margin-bottom:10px;">Mensagem enviada</h3>
-      <p style="opacity:0.7;">Obrigado pelo contato. Retornarei em breve.</p>
-      <br>
-      <button class="btn" onclick="closeModal()">Fechar</button>
-    </div>
-  </div>
+<footer>© 2026 - Cássio Winkler</footer>
 
-  <script>
-    const form = document.querySelector("form");
-    const modal = document.getElementById("modal");
+<div id="modal" class="modal">
+<div class="modal-content">
+<h3>Mensagem enviada</h3>
+<p style="opacity:.7;margin:10px 0">Retornarei em breve.</p>
+<button class="btn" onclick="closeModal()">Fechar</button>
+</div>
+</div>
 
-    form.addEventListener("submit", async function(e) {
-      e.preventDefault();
+<script>
+const form=document.querySelector('form');
+const modal=document.getElementById('modal');
 
-      const data = new FormData(form);
+form.addEventListener('submit',async e=>{
+e.preventDefault();
+const data=new FormData(form);
+try{
+const res=await fetch(form.action,{method:'POST',body:data,headers:{Accept:'application/json'}});
+if(res.ok){form.reset();modal.style.display='flex'}
+else alert('Erro ao enviar')
+}catch{alert('Erro de conexão')}
+});
 
-      try {
-        const response = await fetch(form.action, {
-          method: "POST",
-          body: data,
-          headers: {
-            'Accept': 'application/json'
-          }
-        });
+function closeModal(){modal.style.display='none'}
+window.onclick=e=>{if(e.target===modal)modal.style.display='none'};
+</script>
 
-        if (response.ok) {
-          form.reset();
-          modal.style.display = "flex";
-        } else {
-          alert("Erro ao enviar. Tente novamente.");
-        }
-      } catch (error) {
-        alert("Erro de conexão.");
-      }
-    });
-
-    function closeModal() {
-      modal.style.display = "none";
-    }
-
-    // fechar ao clicar fora
-    window.addEventListener("click", function(e) {
-      if (e.target === modal) {
-        modal.style.display = "none";
-      }
-    });
-  </script>
 </body>
 </html>
