@@ -1,0 +1,32 @@
+name: Manter repositório ativo
+
+on:
+  schedule:
+    - cron: "0 12 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Atualizar arquivo
+        run: |
+          echo "Última atualização: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" > .last-update
+
+      - name: Fazer commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add .last-update
+
+          git diff --cached --quiet || git commit -m "chore: atualização automática"
+
+          git push
