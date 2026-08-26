@@ -199,8 +199,6 @@
 
       --linkedin: #0a66c2;
 
-      --green: #25d366;
-
       --border: rgba(255,255,255,.075);
 
       --container: 1380px;
@@ -1255,7 +1253,7 @@
     }
 
 
-    .whatsapp-button {
+    .send-button {
 
       min-height: 50px;
 
@@ -1263,13 +1261,13 @@
 
       border-radius: 10px;
 
-      color: #00150a;
+      color: #001014;
 
       background:
         linear-gradient(
           120deg,
-          #83ffbc,
-          var(--green)
+          var(--cyan2),
+          var(--cyan)
         );
 
       font-size: 10px;
@@ -1284,14 +1282,14 @@
     }
 
 
-    .whatsapp-button:hover {
+    .send-button:hover {
 
       transform:
         translateY(-2px);
 
       box-shadow:
         0 12px 35px
-        rgba(37,211,102,.15);
+        rgba(0,229,255,.2);
     }
 
 
@@ -1622,8 +1620,6 @@
 
         <span class="status-dot"></span>
 
-        
-
       </div>
 
     </nav>
@@ -1746,7 +1742,7 @@
 
           <img
             class="profile-image"
-            src="https://media.licdn.com/dms/image/v2/D4D03AQGaF4nQ1-F2kw/profile-displayphoto-crop_800_800/B4DaA94CfyKgAI-/0/1787744500431?e=1789603200&v=beta&t=3fwOqHW73LbYbXJTZpH3Bf-EKN6C9S33PsJfrs1Xlo4"
+            src="https://media.licdn.com/dms/image/v2/D4D03AQGaF4nQ1-F2kw/profile-displayphoto-crop_800_800/B4DaA94CfyKgAI-/0/1787744500431?e=1789603200&v=beta&t=3fwOqHW73LbYbXJTZTZpH3Bf-EKN6C9S33PsJfrs1Xlo4"
             alt=""
             width="74"
             height="74"
@@ -1796,7 +1792,7 @@
 
     </section>
 
-<!-- =====================================================
+    <!-- =====================================================
          CONTACT
          ===================================================== -->
 
@@ -1846,7 +1842,7 @@
 
           <button
             type="submit"
-            class="whatsapp-button"
+            class="send-button"
           >
             ◉ ENVIAR MENSAGEM
           </button>
@@ -1902,9 +1898,6 @@
 
     document.getElementById("year").textContent =
       new Date().getFullYear();
-
-
-    
 
   </script>
 
