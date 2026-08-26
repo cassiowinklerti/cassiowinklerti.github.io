@@ -86,16 +86,6 @@
     content="Cássio Winkler"
   >
 
-  <meta
-    property="og:image"
-    content="https://media.licdn.com/dms/image/v2/D4D03AQGaF4nQ1-F2kw/profile-displayphoto-crop_800_800/B4DaA94CfyKgAI-/0/1787744500431?e=1789603200&v=beta&t=3fwOqHW73LbYbXJTZTZpH3Bf-EKN6C9S33PsJfrs1Xlo4"
-  >
-
-  <meta
-    property="og:image:alt"
-    content="Cássio Winkler"
-  >
-
   <!-- =========================================================
        TWITTER
        ========================================================= -->
@@ -113,11 +103,6 @@
   <meta
     name="twitter:description"
     content="Tecnologia, automação, ERP e inovação."
-  >
-
-  <meta
-    name="twitter:image"
-    content="https://media.licdn.com/dms/image/v2/D4D03AQGaF4nQ1-F2kw/profile-displayphoto-crop_800_800/B4DaA94CfyKgAI-/0/1787744500431?e=1789603200&v=beta&t=3fwOqHW73LbYbXJTZpH3Bf-EKN6C9S33PsJfrs1Xlo4"
   >
 
   <!-- =========================================================
@@ -159,7 +144,6 @@
     "@type": "Person",
     "name": "Cássio Winkler",
     "url": "https://SEU-DOMINIO.com.br/",
-    "image": "https://media.licdn.com/dms/image/v2/D4D03AQGaF4nQ1-F2kw/profile-displayphoto-crop_800_800/B4DaA94CfyKgAI-/0/1787744500431?e=1789603200&v=beta&t=3fwOqHW73LbYbXJTZpH3Bf-EKN6C9S33PsJfrs1Xlo4",
     "jobTitle": "Tecnologia, Automação e Inovação",
     "sameAs": [
       "https://www.linkedin.com/in/cassiowinklerti/"
@@ -986,12 +970,15 @@
     }
 
 
-    .profile-image {
+    /* SUBSTITUTO DA FOTO: AVATAR DE INICIAIS */
+    .profile-avatar {
 
       width: 74px;
       height: 74px;
 
-      object-fit: cover;
+      display: grid;
+
+      place-items: center;
 
       border:
         2px solid
@@ -999,8 +986,22 @@
 
       border-radius: 50%;
 
-      box-shadow:
+      background:
+        rgba(0,229,255,.05);
 
+      color: var(--cyan);
+
+      font-family:
+        "Space Grotesk",
+        sans-serif;
+
+      font-size: 24px;
+
+      font-weight: 700;
+
+      letter-spacing: -.02em;
+
+      box-shadow:
         0 0 35px
         rgba(0,229,255,.13);
     }
@@ -1091,8 +1092,6 @@
         var(--cyan);
     }
 
-
-    /* Posicionamento das 5 órbitas ao redor do círculo */
 
     .orbit-1 {
 
@@ -1447,10 +1446,12 @@
       }
 
 
-      .profile-image {
+      .profile-avatar {
 
         width: 62px;
         height: 62px;
+
+        font-size: 20px;
       }
 
 
@@ -1740,15 +1741,10 @@
 
         <div class="identity">
 
-          <img
-            class="profile-image"
-            src="https://media.licdn.com/dms/image/v2/D4D03AQGaF4nQ1-F2kw/profile-displayphoto-crop_800_800/B4DaA94CfyKgAI-/0/1787744500431?e=1789603200&v=beta&t=3fwOqHW73LbYbXJTZTZpH3Bf-EKN6C9S33PsJfrs1Xlo4"
-            alt=""
-            width="74"
-            height="74"
-            loading="eager"
-            decoding="async"
-          >
+          <!-- MONOGRAMA NO LUGAR DA FOTO -->
+          <div class="profile-avatar">
+            CW
+          </div>
 
 
           <div class="identity-name">
