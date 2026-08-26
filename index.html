@@ -1796,15 +1796,11 @@
 
     </section>
 
-
-    <!-- =====================================================
+<!-- =====================================================
          CONTACT
          ===================================================== -->
 
     <section class="contact">
-
-
-      <!-- WHATSAPP -->
 
       <div class="contact-card">
 
@@ -1812,65 +1808,52 @@
           Contato direto
         </div>
 
-
         <h3>
           Fale comigo.
         </h3>
 
-
         <p>
-
-          Para oportunidades, projetos ou
-          assuntos profissionais, envie uma
-          mensagem diretamente pelo WhatsApp.
-
+          Para oportunidades, projetos ou assuntos profissionais, envie uma mensagem diretamente pelo formulário abaixo.
         </p>
-
 
         <form
           class="contact-form"
-          id="whatsappForm"
+          action="https://formspree.io/f/mdenkaak"
+          method="POST"
         >
 
           <input
             type="text"
-            id="name"
+            name="name"
             placeholder="Seu nome"
             autocomplete="name"
             required
           >
 
-
           <input
             type="email"
-            id="email"
+            name="email"
             placeholder="Seu e-mail"
             autocomplete="email"
             required
           >
 
-
           <textarea
-            id="message"
+            name="message"
             placeholder="Sua mensagem..."
             required
           ></textarea>
-
 
           <button
             type="submit"
             class="whatsapp-button"
           >
-
-            ◉
-            CONTINUAR PELO WHATSAPP
-
+            ◉ ENVIAR MENSAGEM
           </button>
 
         </form>
 
       </div>
-
 
     </section>
 
@@ -1921,93 +1904,7 @@
       new Date().getFullYear();
 
 
-    /* =======================================================
-       WHATSAPP FORM
-       ======================================================= */
-
-    const WHATSAPP_NUMBER =
-      "SEU_NUMERO_WHATSAPP";
-
-
-    const form =
-      document.getElementById("whatsappForm");
-
-
-    form.addEventListener(
-      "submit",
-      function(event) {
-
-        event.preventDefault();
-
-
-        const name =
-          document
-            .getElementById("name")
-            .value
-            .trim();
-
-
-        const email =
-          document
-            .getElementById("email")
-            .value
-            .trim();
-
-
-        const message =
-          document
-            .getElementById("message")
-            .value
-            .trim();
-
-
-        if (
-          !name ||
-          !email ||
-          !message
-        ) {
-
-          alert(
-            "Preencha todos os campos."
-          );
-
-          return;
-        }
-
-
-        const whatsappMessage =
-
-`Olá, Cássio!
-
-Meu nome é ${name}.
-
-E-mail:
-${email}
-
-Mensagem:
-${message}
-
-Conheci seu perfil através do seu site.`;
-
-
-        const url =
-
-          "https://wa.me/" +
-          WHATSAPP_NUMBER +
-          "?text=" +
-          encodeURIComponent(
-            whatsappMessage
-          );
-
-
-        window.open(
-          url,
-          "_blank",
-          "noopener,noreferrer"
-        );
-
-      }
-    );
+    
 
   </script>
 
