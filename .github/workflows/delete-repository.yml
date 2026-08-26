@@ -1,0 +1,39 @@
+name: Excluir repositório na data programada
+
+on:
+  schedule:
+    - cron: "17 12 * * *"
+  workflow_dispatch:
+
+jobs:
+  delete-repository:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Verificar data
+        id: date
+        run: |
+          TARGET_DATE="2028-09-30"
+          TODAY=$(date -u +%Y-%m-%d)
+
+          TARGET=$(date -d "$TARGET_DATE" +%s)
+          TODAY_TS=$(date -d "$TODAY" +%s)
+
+          DIFF=$(( (TODAY_TS - TARGET) / 86400 ))
+
+          echo "Data atual: $TODAY"
+          echo "Data alvo: $TARGET_DATE"
+          echo "Diferença: $DIFF dias"
+
+          if [ "$DIFF" -ge -1 ] && [ "$DIFF" -le 1 ]; then
+            echo "delete=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "delete=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Excluir repositório
+        if: steps.date.outputs.delete == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.DELETE_REPO_TOKEN }}
+        run: |
+          gh repo delete "${{ github.repository }}" --yes
