@@ -13,7 +13,7 @@ jobs:
       - name: Verificar data
         id: date
         run: |
-          TARGET_DATE="2028-09-30"
+          TARGET_DATE="2027-09-30"
           TODAY=$(date -u +%Y-%m-%d)
 
           TARGET=$(date -d "$TARGET_DATE" +%s)
