@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    
+    <!-- SEO Primary Tags -->
+    <title>CF START | Crossfit em Guarapuava - PR</title>
+    <meta name="description" content="CF START em Guarapuava. Crossfit, Treinamento Funcional e Start Run com metodologia profissional, estrutura completa e acompanhamento especializado. Agende sua visita!">
+    <meta name="keywords" content="CF START, Crossfit Guarapuava, Centro de Treinamento Guarapuava, Treinamento Funcional Boqueirão, Academia Guarapuava, Start Run">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cfstart.com.br/">
+
+    <!-- Open Graph / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cfstart.com.br/">
+    <meta property="og:title" content="CF START | Crossfit">
+    <meta property="og:description" content="Excelência em performance, saúde e comunidade em Guarapuava. Agende sua aula experimental.">
+    <meta property="og:image" content="https://ugc.production.linktr.ee/nOiYYXsDQWSYX53wTcZH_cuDtQ22eYtaouum5?io=true&size=avatar-v3_0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://ugc.production.linktr.ee/nOiYYXsDQWSYX53wTcZH_cuDtQ22eYtaouum5?io=true&size=avatar-v3_0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD (SEO Local) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsActivityLocation",
+      "name": "CF START",
+      "image": "https://ugc.production.linktr.ee/nOiYYXsDQWSYX53wTcZH_cuDtQ22eYtaouum5?io=true&size=avatar-v3_0",
+      "telephone": "+5542999024122",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Ver. Serafim Ribas",
+        "addressLocality": "Guarapuava",
+        "addressRegion": "PR",
+        "postalCode": "85023-500",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -25.4161513,
+        "longitude": -51.4818354
+      },
+      "url": "https://linktr.ee/cfstart",
+      "sameAs": [
+        "https://www.instagram.com/cf.start/"
+      ]
+    }
+    </script>
+
+    <style>
+        /* DESIGN SYSTEM - INSTITUCIONAL & PREMIUM */
+        :root {
+            --bg-dark: #08090d;
+            --bg-card: #11131b;
+            --bg-card-hover: #181b26;
+            --border-color: rgba(255, 255, 255, 0.08);
+            
+            --neon-pink: #ff007f;
+            --neon-pink-glow: rgba(255, 0, 127, 0.25);
+            --electric-blue: #4d00ff;
+            --cyan-accent: #00d2ff;
+            
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --whatsapp-green: #25d366;
+            
+            --font-head: 'Syne', sans-serif;
+            --font-body: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: var(--font-body);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER INSTITUCIONAL */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(8, 9, 13, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 14px 0;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .brand-logo img {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 2px solid var(--neon-pink);
+            box-shadow: 0 0 12px var(--neon-pink-glow);
+        }
+
+        .brand-text {
+            font-family: var(--font-head);
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #fff;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-desktop {
+            display: none;
+            gap: 28px;
+        }
+
+        .nav-desktop a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .nav-desktop a:hover {
+            color: #fff;
+        }
+
+        .header-cta-btn {
+            background: linear-gradient(135deg, var(--electric-blue), var(--neon-pink));
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.85rem;
+            box-shadow: 0 4px 15px var(--neon-pink-glow);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .header-cta-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(255, 0, 127, 0.4);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            padding: 60px 0 40px;
+            text-align: center;
+            position: relative;
+            background: radial-gradient(circle at 50% 0%, rgba(77, 0, 255, 0.15) 0%, rgba(8, 9, 13, 0) 70%);
+        }
+
+        .badge-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 0, 127, 0.08);
+            border: 1px solid rgba(255, 0, 127, 0.3);
+            color: var(--neon-pink);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-family: var(--font-head);
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, #fff 30%, var(--text-muted));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero h1 .highlight {
+            background: linear-gradient(90deg, var(--neon-pink), var(--cyan-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1rem;
+            color: var(--text-muted);
+            max-width: 580px;
+            margin: 0 auto 32px;
+            font-weight: 400;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        /* BUTTONS */
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 16px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--electric-blue), var(--neon-pink));
+            color: #fff;
+            box-shadow: 0 4px 20px var(--neon-pink-glow);
+        }
+
+        .btn-secondary {
+            background: var(--bg-card);
+            color: var(--text-main);
+            border-color: var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-card-hover);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-wsp {
+            background: rgba(37, 211, 102, 0.1);
+            color: var(--whatsapp-green);
+            border-color: rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-wsp:hover {
+            background: rgba(37, 211, 102, 0.2);
+        }
+
+        /* STATS / NUMBERS */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin: 48px 0 24px;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 20px 16px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: var(--font-head);
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #fff;
+            background: linear-gradient(90deg, var(--neon-pink), var(--electric-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* PROGRAMAS E MODALIDADES */
+        .section-header {
+            text-align: center;
+            margin: 50px 0 30px;
+        }
+
+        .section-header h2 {
+            font-family: var(--font-head);
+            font-size: 1.6rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .programs-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .program-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 24px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .program-card:hover {
+            border-color: rgba(255, 0, 127, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .program-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--neon-pink), var(--electric-blue));
+        }
+
+        .program-tag {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--cyan-accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .program-card h3 {
+            font-family: var(--font-head);
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .program-card p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .program-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--neon-pink);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        /* HORÁRIOS & INFRAESTRUTURA */
+        .info-box-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .info-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 24px;
+        }
+
+        .info-card h3 {
+            font-family: var(--font-head);
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #fff;
+        }
+
+        .time-list {
+            list-style: none;
+        }
+
+        .time-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.88rem;
+        }
+
+        .time-list li:last-child {
+            border-bottom: none;
+        }
+
+        .time-list span {
+            color: var(--text-muted);
+        }
+
+        .time-list strong {
+            color: var(--text-main);
+        }
+
+        /* MAPA E LOCALIZAÇÃO */
+        .location-section {
+            margin: 50px 0;
+        }
+
+        .map-wrapper {
+            width: 100%;
+            height: 280px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            margin-top: 16px;
+        }
+
+        .map-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .address-bar {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 16px;
+            margin-top: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
+
+        /* FOOTER INSTITUCIONAL */
+        footer {
+            background: #040507;
+            border-top: 1px solid var(--border-color);
+            padding: 40px 0 100px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 10px 0;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+
+        /* BARRA FIXA DE CONVERSÃO NO MOBILE */
+        .mobile-sticky-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background: rgba(8, 9, 13, 0.92);
+            backdrop-filter: blur(16px);
+            border-top: 1px solid var(--border-color);
+            padding: 12px 16px;
+            display: flex;
+            gap: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .mobile-sticky-bar .btn {
+            padding: 12px 16px;
+            font-size: 0.85rem;
+            border-radius: 10px;
+        }
+
+        /* DESKTOP BREAKPOINTS */
+        @media (min-width: 768px) {
+            .nav-desktop {
+                display: flex;
+            }
+
+            .hero {
+                padding: 100px 0 60px;
+            }
+
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.15rem;
+            }
+
+            .hero-actions {
+                flex-direction: row;
+                max-width: 500px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .programs-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .info-box-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-content {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+
+            .mobile-sticky-bar {
+                display: none;
+            }
+
+            footer {
+                padding-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV BAR INSTITUCIONAL -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="brand-logo">
+                <img src="https://ugc.production.linktr.ee/nOiYYXsDQWSYX53wTcZH_cuDtQ22eYtaouum5?io=true&size=avatar-v3_0" alt="CF START Logo">
+                <span class="brand-text">CF START</span>
+            </a>
+
+            <nav class="nav-desktop">
+                <a href="#modalidades">Modalidades</a>
+                <a href="#startrun">Start Run</a>
+                <a href="#horarios">Horários</a>
+                <a href="#localizacao">Localização</a>
+            </nav>
+
+            <a href="https://app.tecnofit.com.br/tfRedirect?u=F0A5BB9BACF5" target="_blank" rel="noopener" class="header-cta-btn">
+                Agendar Experiência
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="badge-tag">
+                <span>⚡</span> Crossfit em Guarapuava
+            </div>
+            
+            <h1>
+                <span>Construa sua melhor versão</span> <br>
+                <span class="highlight">#cada vez mais.</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Metodologia avançada de Crossfit, acompanhamento profissional e uma comunidade que impulsiona seus resultados diariamente.
+            </p>
+
+            <div class="hero-actions">
+                <a href="https://app.tecnofit.com.br/tfRedirect?u=F0A5BB9BACF5" target="_blank" rel="noopener" class="btn btn-primary">
+                    Agendar Aula Experimental
+                </a>
+                <a href="https://wa.me/5542999024122?text=Ol%C3%A1!%20Gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20institucionais%20e%20planos%20da%20CF%20START." target="_blank" rel="noopener" class="btn btn-wsp">
+                    Falar no WhatsApp
+                </a>
+            </div>
+
+            <!-- NÚMEROS E PROVAS DE IMPACTO -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Acompanhamento Técnico</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label">Anos de História</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Altos</div>
+                    <div class="stat-label">Índices de Evolução</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Guarapuava - Boqueirão</div>
+                    <div class="stat-label">Localização Privilegiada</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROGRAMAS E MODALIDADES -->
+        <section id="modalidades">
+            <div class="section-header">
+                <h2>Programas de Treinamento</h2>
+                <p>Desenvolvidos para atender todos os níveis de condicionamento físico.</p>
+            </div>
+
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-tag">Metodologia Oficial</div>
+                    <h3>CrossFit</h3>
+                    <p>Movimentos funcionais variados executados em alta intensidade para ganho de força, resistência e performance global.</p>
+                    <a href="https://wa.me/5542999024122?text=Quero%20saber%20mais%20sobre%20as%20aulas%20de%20Crossfit" target="_blank" class="program-link">Saiba mais &rarr;</a>
+                </div>
+
+                <div class="program-card" id="startrun">
+                    <div class="program-tag">Comunidade & Performance</div>
+                    <h3>Start Run</h3>
+                    <p>Grupo de corrida focado em desenvolvimento de resistência cardiovascular, ritmo e preparação para provas de rua.</p>
+                    <a href="https://wa.me/5542999024122?text=Quero%20saber%20mais%20sobre%20o%20Start%20Run" target="_blank" class="program-link">Saiba mais &rarr;</a>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-tag">Condicionamento</div>
+                    <h3>Treinamento Funcional</h3>
+                    <p>Aprimoramento de capacidade motora, agilidade e fortalecimento muscular focado na prevenção de lesões.</p>
+                    <a href="https://wa.me/5542999024122?text=Quero%20saber%20mais%20sobre%20Treinamento%20Funcional" target="_blank" class="program-link">Saiba mais &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- INFORMAÇÕES INSTITUCIONAIS / HORÁRIOS -->
+        <section id="horarios">
+            <div class="section-header">
+                <h2>Estrutura & Atendimento</h2>
+                <p>Planejado para se adequar à sua rotina.</p>
+            </div>
+
+            <div class="info-box-grid">
+                <div class="info-card">
+                    <h3>🕒 Horários de Funcionamento</h3>
+                    <ul class="time-list">
+                        <li><span>Segunda a Sexta</span> <strong>06:00 - 22:00</strong></li>
+                        <li><span>Aulas Matutinas</span> <strong>A partir das 06:00h</strong></li>
+                        <li><span>Aulas Noturnas</span> <strong>Até as 22:00h</strong></li>
+                        <li><span>Sábados e Eventos</span> <strong>Consulte Horários Especiais</strong></li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🏆 Por que escolher a CF START?</h3>
+                    <ul class="time-list">
+                        <li><span>Equipamentos</span> <strong>De alta qualidade e homologados</strong></li>
+                        <li><span>Metodologia</span> <strong>Adaptável do iniciante ao atleta</strong></li>
+                        <li><span>Comunidade</span> <strong>Ambiente integrado e motivador</strong></li>
+                        <li><span>Gestão</span> <strong>Agendamento simplificado via App Tecnofit</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCALIZAÇÃO -->
+        <section id="localizacao" class="location-section">
+            <div class="section-header">
+                <h2>Onde Estamos</h2>
+                <p>Fácil acesso no bairro Boqueirão em Guarapuava.</p>
+            </div>
+
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.66113292274!2d-51.481835399999994!3d-25.416151299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef4923e861f8f7%3A0xc733c3262a309185!2sCF%20START!5e0!3m2!1spt-BR!2sbr!4v1788436933312!5m2!1spt-BR!2sbr" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Mapa de localização da CF START"></iframe>
+            </div>
+
+            <div class="address-bar">
+                <span>📍</span>
+                <div>
+                    <strong>Av. Ver. Serafim Ribas</strong> — Boqueirão, Guarapuava - PR, 85023-500
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER INSTITUCIONAL -->
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <p><strong>CF START</strong> — Centro de Treinamento</p>
+                <p>Guarapuava - PR | Telefone: (42) 99902-4122</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="https://www.instagram.com/cf.start/" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://linktr.ee/cfstart" target="_blank" rel="noopener">Linktree</a>
+                <a href="https://wa.me/5542999024122" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+
+            <div>
+                <p>© CF START. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MOBILE STICKY BAR -->
+    <div class="mobile-sticky-bar">
+        <a href="https://app.tecnofit.com.br/tfRedirect?u=F0A5BB9BACF5" target="_blank" rel="noopener" class="btn btn-primary" style="flex: 1.5;">
+            Aula Experimental
+        </a>
+        <a href="https://wa.me/5542999024122?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" class="btn btn-wsp" style="flex: 1;">
+            WhatsApp
+        </a>
+    </div>
+
+</body>
+</html>
